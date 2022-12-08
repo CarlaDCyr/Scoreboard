@@ -4,6 +4,9 @@
     </head>
     <body>
         <div class="container">
+            <div class="title-container">
+                <h1 id="app-title">Scoreboard</h1>
+            </div>
             <div class="score-container">
                 <div class="scorebox">
                     <h3 class="title">HOME</h3>
@@ -11,7 +14,7 @@
                 </div>
                 <div class="scorebox">
                     <h3 class="title">GUEST</h3>
-                    <h3 id="guest-score"></h3>
+                    <h3 class="score" id="guest-score"></h3>
                 </div>
             </div>
             <div class="score-increment">
@@ -27,6 +30,9 @@
                         <button class="btn3 score-button"
                         onclick="addThreeGuest()">+3</button>
                     </div>
+                </div>
+                <div class="new-game">
+                    <button id="newGame-btn" onclick="newGame()">New Game</button>
                 </div>
             </div>
         </div>

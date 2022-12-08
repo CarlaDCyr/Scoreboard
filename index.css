@@ -1,32 +1,60 @@
 @font-face { font-family: Timer; src: url('CursedTimerUlil-Aznm.ttf'); } 
 
 body {
-    margin: 0;
     text-align: center;
 }
 
+.title-container{
+    display: flex;
+    justify-content: center;
+}
+
+#app-title{
+    background-color: #FB7185;
+    width: fit-content;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 2px 2px #080001;
+    text-shadow: 0 0 3px #13131b;
+}
+
 .container {
-    column-gap: 100px;
-    background-color: #080001;
+    background-color: #232231;
     width: 575px;
-    height: 385px;
+    height: 425px;
     border: 10px solid #9F1239;
-    margin: auto;
     border-radius: 5px;
     box-shadow: 3px 3px 5px #080001;
-    color: #FB7185;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .score-container{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 30px 40px;
 }
 
-#guest-score, #home-score{
-    background-color: white;
-    padding: 20px 10px;
-    border: 3px solid #FB7185;
+.score{
+    background-color: #13131b;
+    border: 3px solid #9F1239;
+    color: #9F1239;
+    font-family: Timer, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 25px;
+    text-shadow: 0 0 3px #FB7185;
+    box-shadow: 2px 2px #080001;
 }
 
 .increment{
@@ -37,14 +65,16 @@ body {
 .score-button{
     width: 50px;
     height: 40px;
-    background-color: #080001;
+    background-color: #232231;
     border: 3px solid #9F1239;
     font-weight: bold;
     font-family: Timer, sans-serif;
     color: #9F1239;
     font-size: 20px;
-    margin: auto 2px;
     border-radius: 5px;
+    margin: auto 3px;
+    text-shadow: 0 0 3px #FB7185;
+    box-shadow: 0 0 3px #FB7185;
 }
 
 .score-button:hover{
@@ -53,5 +83,29 @@ body {
 }
 
 .score-button:active{
+    transform: scale(1.03);
+}
+
+.new-game{
+    margin: 30px auto;
+}
+
+#newGame-btn{
+    width: 150px;
+    height: 30px;
+    background-color: #FB7185;
+    color: #13131b;
+    border: 2px solid #9F1239;
+    border-radius: 5px;
+    font-family: Timer, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#newGame-btn:hover{
+    background-color: #9F1239;
+}
+
+#newGame-btn:active{
     transform: scale(1.03);
 }
