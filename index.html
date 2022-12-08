@@ -7,25 +7,25 @@
             <div class="score-container">
                 <div class="scorebox">
                     <h3 class="title">HOME</h3>
-                    <h3 class="score"> 15</h3>
+                    <h3 class="score" id="home-score"></h3>
                 </div>
                 <div class="scorebox">
                     <h3 class="title">GUEST</h3>
-                    <h3 class="score"> 15</h3>
+                    <h3 id="guest-score"></h3>
                 </div>
             </div>
             <div class="score-increment">
                 <div class="increment">
                     <div class="home-increment">
-                        <button class="btn1 score-button" onclick="btn1()">+1</button>
-                        <button class="btn2 score-button" onclick="btn2()">+2</button>
-                        <button class="btn3 score-button" onclick="btn3()">+3</button>
+                        <button class="btn1 score-button" onclick="addOneHome()">+1</button>
+                        <button class="btn2 score-button" onclick="addTwoHome()">+2</button>
+                        <button class="btn3 score-button" onclick="addThreeHome()">+3</button>
                     </div>
                     <div class="guest-increment">
-                        <button class="btn1 score-button" onclick="btn1()">+1</button>
-                        <button class="btn2 score-button" onclick="btn2()">+2</button>
+                        <button class="btn1 score-button" onclick="addOneGuest()">+1</button>
+                        <button class="btn2 score-button" onclick="addTwoGuest()">+2</button>
                         <button class="btn3 score-button"
-                        onclick="btn3()">+3</button>
+                        onclick="addThreeGuest()">+3</button>
                     </div>
                 </div>
             </div>

@@ -23,7 +23,7 @@ body {
     margin-top: 30px 40px;
 }
 
-.score{
+#guest-score, #home-score{
     background-color: white;
     padding: 20px 10px;
     border: 3px solid #FB7185;
