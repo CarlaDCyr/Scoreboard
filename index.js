@@ -1,41 +1,23 @@
-let home = document.getElementById("home-score")
-let guest = document.getElementById("guest-score")
-let homeScore = home.textContent
-let guestScore = guest.textContent
+let homeScore = 0
+let guestScore = 0
 
-function addOneHome(){
-    homeScore = +homeScore + 1
-    home.textContent = homeScore
+function addHome(num){
+    homeScore += num
+    render()
 }
 
-function addTwoHome(){
-    homeScore = +homeScore + 2
-    home.textContent = homeScore
+function addGuest(num){
+    guestScore += num
+    render()
 }
 
-function addThreeHome(){
-    homeScore = +homeScore + 3
-    home.textContent = homeScore
-}
-
-function addOneGuest(){
-    guestScore = +guestScore + 1
-    guest.textContent = guestScore
-}
-
-function addTwoGuest(){
-    guestScore = +guestScore + 2
-    guest.textContent = guestScore
-}
-
-function addThreeGuest(){
-    guestScore = +guestScore + 3
-    guest.textContent = guestScore
+function render(){
+    document.getElementById("home-score").textContent = homeScore
+    document.getElementById("guest-score").textContent = guestScore
 }
 
 function newGame(){
     homeScore = 0
     guestScore = 0
-    home.textContent = homeScore
-    guest.textContent = guestScore
+    render()
 }

@@ -9,19 +9,17 @@ body {
     justify-content: center;
 }
 
-#app-title{
-    background-color: #FB7185;
+.app-title{
     width: fit-content;
     padding: 2px 5px;
+    border: 2px solid #9F1239 ;
     border-radius: 5px;
     color: white;
-    box-shadow: 2px 2px #080001;
     text-shadow: 0 0 3px #13131b;
 }
 
 .container {
     background-color: #232231;
-    width: 575px;
     height: 425px;
     border: 10px solid #9F1239;
     border-radius: 5px;

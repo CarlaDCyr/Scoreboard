@@ -5,7 +5,7 @@
     <body>
         <div class="container">
             <div class="title-container">
-                <h1 id="app-title">Scoreboard</h1>
+                <h1 class="app-title">Scoreboard</h1>
             </div>
             <div class="score-container">
                 <div class="scorebox">
@@ -20,15 +20,15 @@
             <div class="score-increment">
                 <div class="increment">
                     <div class="home-increment">
-                        <button class="btn1 score-button" onclick="addOneHome()">+1</button>
-                        <button class="btn2 score-button" onclick="addTwoHome()">+2</button>
-                        <button class="btn3 score-button" onclick="addThreeHome()">+3</button>
+                        <button class="score-button" onclick="addHome(1)">+1</button>
+                        <button class="score-button" onclick="addHome(2)">+2</button>
+                        <button class="score-button" onclick="addHome(3)">+3</button>
                     </div>
                     <div class="guest-increment">
-                        <button class="btn1 score-button" onclick="addOneGuest()">+1</button>
-                        <button class="btn2 score-button" onclick="addTwoGuest()">+2</button>
-                        <button class="btn3 score-button"
-                        onclick="addThreeGuest()">+3</button>
+                        <button class="score-button" onclick="addGuest(1)">+1</button>
+                        <button class="score-button" onclick="addGuest(2)">+2</button>
+                        <button class="score-button"
+                        onclick="addGuest(3)">+3</button>
                     </div>
                 </div>
                 <div class="new-game">
