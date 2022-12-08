@@ -6,12 +6,14 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-around;
-    background-color: #1B244A;
+    justify-content: space-evenly;
+    background-color: #080001;
     width: 575px;
     height: 385px;
-    border: 5px solid #0C4A6E;
+    border: 10px solid #9F1239;
     margin: auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #080001;
 }
 
 .title{
@@ -20,30 +22,58 @@ body {
     font-weight: bold;
     font-size: 40;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #EEEEEE;
+    color: #FFFFFF;
     margin: -60px auto;
     text-align: center;
+    text-shadow: 0px 0px 6px #FFE4E6;
 }
 
 .scorebox{
-    background-color: #080001;
+    background-color: #111827;
     width: 155px;
     height: 120px;
-    margin: auto;
+    margin: auto 0;
+    border: 5px solid #080001;
+    border-radius: 3px;
+    box-shadow: 0 0 7px #FB7185;
+
+}
+
+.score{
+    font-size: 80px;
+    color: #FFE4E6;
+    margin: 105px 12px;
+    font-family: Timer, sans-serif;
+    color: #9F1239;
+    text-shadow: 0px 0px 7px #FB7185;
 }
 
 .score-increment{
     display: flex;
-    justify-content: center;
-    margin: -120px 100px;
+    justify-content: space-around;
+    margin: -120px 75px;
 }
 
 .score-button{
-    background-color: #080001;
+    background-color: #111827;
     width: 49px;
     height: 45px;
-    border: 2px solid #0C4A6E;
+    border: 3px solid #9F1239;
     border-radius: 5px;
-    margin: auto 2px;
+    margin: auto 5px;
+    box-shadow: 0 0 7px #FB7185;
+    font-family: Timer, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #9F1239;
+
 }
 
+.score-button:hover{
+    text-shadow: 0px 0px 7px #FB7185;
+
+}
+
+.score-button:active{
+    transform: scale(1.03);
+}
